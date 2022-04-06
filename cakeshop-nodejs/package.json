@@ -1,0 +1,25 @@
+{
+  "name": "cakeshop-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillianaleecode/cakeshop-backend.git"
+  },
+  "author": "Lilliana Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lillianaleecode/cakeshop-backend/issues"
+  },
+  "homepage": "https://github.com/lillianaleecode/cakeshop-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
+}
