@@ -1,0 +1,103 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>LOGIN</title>
+
+    
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet"> 
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form id="formLogin" action="/login" method="POST">
+    <img class="mb-4" src="img/cakelogo.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="user" name="user" placeholder="User">
+      <label for="floatingInput">User</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="fpass" name="pass" placeholder="Password">
+      <label for="pass">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <!-- <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label> -->
+    </div>
+    <button class="w-100 btn btn-lg btn-bd-primary" type="submit">Log In</button>
+    
+    
+  </form>
+  <br>
+    <a href="/register" type="button" class="w-100 btn btn-lg btn-bd-primary">Register</a>
+    <!-- <button class="w-100 btn btn-lg btn-bd-primary" type="submit">Register</button> -->
+    <p class="mt-5 mb-3 text-muted">&copy; Artlee</p>
+  
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="authController.js"></script>
+
+<!-- VS code will highlight EJS format as wrong but it is not -->
+<% if(alert) { %>
+  
+  <script>
+    Swal.fire({
+      title: '<%= alertTitle %>',
+      text:'<%= alertMessage %>',
+      icon:'<%= alertIcon %>',
+      showConfirmButton: <%= showConfirmButton %>,
+      timer: <%= timer %>
+    }).then(()=>{
+      window.location = '/<%= ruta %>'
+    })
+  </script>
+<% } %>
+
+  
+
+    
+  </body>
+</html>

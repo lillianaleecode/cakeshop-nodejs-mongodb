@@ -1,0 +1,4 @@
+/* Estilos boton color login */
+.btn-bd-primary{font-weight:600;color:#fff;background-color:#fe019a;border-color:#fe019a}
+.btn-bd-primary:hover,.btn-bd-primary:active{color:#fff;background-color:#00fee3;border-color:#00fee3}
+.btn-bd-primary:focus{box-shadow:0 0 0 3px #1bfe00)}
